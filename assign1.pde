@@ -1,8 +1,9 @@
 float soldierx = 0;
 float soldierspeed=5;
-int soldierY = floor(random(80))+160;
-int robotX = floor(random(640))+160;
-int robotY = floor(random(160))+160;
+int soldierY = floor(random(2,6))*80;
+int robotX = floor(random(3,8))*80;
+int robotY = floor(random(2,6))*80;
+int laserWidth = 40;
 
 PImage bgImg;
 PImage soilImg;
@@ -51,12 +52,8 @@ void draw() {
   image(soldierImg,soldierx,soldierY);
   soldierx%= 640;
   
-  
-  
   //robot
   image(robotImg,robotX,robotY);
-  
-  
   
   //sun
   
@@ -67,8 +64,5 @@ void draw() {
   ellipse(590,50,120,120);
   
   
-  
-
-  
-  
+ 
 }
