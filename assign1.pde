@@ -1,5 +1,5 @@
-float soldierx = 0;
-float soldierspeed=5;
+float soldierX = 0;
+float soldierSpeed=5;
 int soldierY = floor(random(2,6))*80;
 int robotX = floor(random(3,8))*80;
 int robotY = floor(random(2,6))*80;
@@ -48,9 +48,9 @@ void draw() {
   
   //soldier
   
-  soldierx=soldierx+soldierspeed;
-  image(soldierImg,soldierx,soldierY);
-  soldierx%= 640;
+  soldierX=soldierX+soldierSpeed;
+  image(soldierImg,soldierX,soldierY);
+  soldierX%= 640;
   
   //robot
   image(robotImg,robotX,robotY);
