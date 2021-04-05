@@ -49,7 +49,7 @@ void draw() {
   //soldier
   
   soldierX=soldierX+soldierSpeed;
-  image(soldierImg,soldierX,soldierY);
+  image(soldierImg,soldierX-80,soldierY);
   soldierX%= 640+80;
   
   //robot
